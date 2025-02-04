@@ -16,7 +16,7 @@ public class AppConfig {
     {
         return RestClient.builder()
                 .baseUrl("http://localhost:8083")
-                //.defaultStatusHandler(restErrorHandler)
+                .defaultStatusHandler(restErrorHandler)
                 .build();
     }
 }

@@ -1,17 +1,5 @@
-resilience4j:
-  circuitbreaker:
-    instances:
-      myService:
-        register-health-indicator: true
-        failure-rate-threshold: 50
-        slow-call-rate-threshold: 80
-        slow-call-duration-threshold: 2s
-        permitted-number-of-calls-in-half-open-state: 3
-        sliding-window-size: 10
-        minimum-number-of-calls: 5
-        wait-duration-in-open-state: 10s
-        automatic-transition-from-open-to-half-open-enabled: true
-        slidingWindowType: COUNT_BASED
+server:
+  port: 8096
 
 management:
   endpoints:

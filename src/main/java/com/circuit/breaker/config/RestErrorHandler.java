@@ -17,9 +17,9 @@ public class RestErrorHandler implements ResponseErrorHandler {
 
     @Override
     public void handleError(URI url, HttpMethod method, ClientHttpResponse response) throws IOException {
-        if(response.getStatusCode().is4xxClientError())
+       /* if(response.getStatusCode().is4xxClientError())
             throw new RuntimeException("Client Exception");
         if(response.getStatusCode().is5xxServerError())
-            throw new RuntimeException("Server Exception");
+            throw new RuntimeException("Server Exception");*/
     }
 }
